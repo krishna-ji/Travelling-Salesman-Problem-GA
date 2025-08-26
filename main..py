@@ -6,7 +6,7 @@ This script demonstrates all components of the TSP GA implementation
 """
 
 from tsp_genetic_algorithm import TSPGeneticAlgorithm, create_random_cities
-from simple_tsp_demo import SimpleTSPGA, create_example_cities
+from demo import SimpleTSPGA, create_example_cities
 from berlin52_data import get_berlin52_data, get_berlin52_subset
 import matplotlib.pyplot as plt
 import time

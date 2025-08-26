@@ -6,7 +6,7 @@ This script provides a quick demonstration of the key features
 """
 
 from tsp_genetic_algorithm import TSPGeneticAlgorithm
-from simple_tsp_demo import SimpleTSPGA, create_example_cities
+from demo import SimpleTSPGA, create_example_cities
 from berlin52_data import get_berlin52_subset
 import matplotlib.pyplot as plt
 
@@ -162,11 +162,6 @@ def main():
         print("\n" + "=" * 50)
         print("DEMONSTRATION COMPLETED!")
         print("=" * 50)
-        print("\nKey Takeaways:")
-        print("✓ GA significantly improves over random solutions")
-        print("✓ Different components affect performance")
-        print("✓ Algorithm shows clear convergence behavior")
-        print("✓ Early stopping prevents unnecessary computation")
         
     except Exception as e:
         print(f"Error during demonstration: {e}")

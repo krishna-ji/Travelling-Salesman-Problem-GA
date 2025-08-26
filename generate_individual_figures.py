@@ -8,7 +8,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 from tsp_genetic_algorithm import TSPGeneticAlgorithm, create_random_cities
-from simple_tsp_demo import SimpleTSPGA, create_example_cities
+from demo import SimpleTSPGA, create_example_cities
 from berlin52_data import get_berlin52_subset, get_berlin52_data
 import time
 

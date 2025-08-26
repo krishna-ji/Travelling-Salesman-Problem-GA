@@ -21,7 +21,7 @@ The TSP can be formally defined as finding a Hamiltonian cycle of minimum weight
 
 ### B. Objectives
 
-This research aims to:
+This implementation aims to:
 1. Implement a complete genetic algorithm framework for TSP
 2. Compare different evolutionary operators and selection strategies
 3. Analyze convergence behavior and parameter sensitivity
@@ -214,7 +214,7 @@ The authors acknowledge the use of the Berlin52 benchmark dataset and standard T
 ---
 
 **Author Information:**
-This research was conducted as part of Laboratory Assignment 10 for the Artificial Intelligence course, demonstrating comprehensive understanding and implementation of genetic algorithms for combinatorial optimization problems.
+This implemented was conducted as part of Laboratory Assignment 10 for the Artificial Intelligence course, demonstrating comprehensive understanding and implementation of genetic algorithms for combinatorial optimization problems.
 -Dinanath Padhya
 -Krishna Acharya
 

@@ -187,33 +187,7 @@ Current limitations include:
 
 ## VI. CONCLUSIONS
 
-This study presents a comprehensive genetic algorithm implementation for the Traveling Salesman Problem with thorough experimental analysis. Key findings include:
-
-1. **Effectiveness**: GA achieves 30-60% improvement over random solutions
-2. **Operator Performance**: Tournament selection and order crossover prove most effective
-3. **Parameter Optimization**: Population sizes of 80-100 and mutation rates around 10% provide optimal performance
-4. **Scalability**: Algorithm maintains reasonable computational requirements for moderate problem sizes
-5. **Convergence**: Rapid initial convergence with effective early stopping mechanisms
-
-The implementation successfully demonstrates all core genetic algorithm components and their application to combinatorial optimization problems. Future work could explore hybrid approaches combining genetic algorithms with local search methods for enhanced performance on larger instances.
-
-### A. Future Enhancements
-
-Potential improvements include:
-1. Implementation of advanced crossover operators (PMX, Edge recombination)
-2. Integration with local search methods (2-opt, 3-opt)
-3. Adaptive parameter control mechanisms
-4. Parallel processing for population evaluation
-5. Multi-objective extensions for real-world constraints
-
-### B. Practical Applications
-
-The developed framework has applications in:
-- Vehicle routing optimization
-- Manufacturing process scheduling
-- Network design and topology optimization
-- Resource allocation problems
-- Circuit board drilling optimization
+This study presents a comprehensive genetic algorithm implementation for the Traveling Salesman Problem, supported by thorough experimental analysis. The results demonstrate that genetic algorithms achieve 30-60% improvement over random solutions, with tournament selection and order crossover proving most effective among the tested operators. Optimal performance is observed with population sizes of 80-100 and mutation rates around 10%, while the algorithm maintains reasonable computational requirements for moderate problem sizes and exhibits rapid initial convergence with effective early stopping mechanisms. The implementation successfully demonstrates all core genetic algorithm components and their application to combinatorial optimization problems. Future work may include hybrid approaches combining genetic algorithms with local search methods, advanced crossover operators such as PMX and edge recombination, adaptive parameter control, parallel processing for population evaluation, and multi-objective extensions to address real-world constraints. The developed framework is applicable to vehicle routing, manufacturing process scheduling, network design, resource allocation, and circuit board drilling optimization.
 
 ## ACKNOWLEDGMENT
 
@@ -241,6 +215,8 @@ The authors acknowledge the use of the Berlin52 benchmark dataset and standard T
 
 **Author Information:**
 This research was conducted as part of Laboratory Assignment 10 for the Artificial Intelligence course, demonstrating comprehensive understanding and implementation of genetic algorithms for combinatorial optimization problems.
+-Dinanath Padhya
+-Krishna Acharya
 
 **Date:** August 26, 2025
 

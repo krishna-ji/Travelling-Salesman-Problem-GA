@@ -2,7 +2,9 @@
 
 How to run?
 - just run `main.py` for full working and `demo.py` for simpler instance.
-- some files like generate_figures.py and generate_individual_figures.py are for generating diagrams for lab report.
+- some files like `generate_figures.py` and `generate_individual_figures.py` are for generating diagrams for lab report.
+
+
 **Abstract—** This paper presents a comprehensive implementation and analysis of genetic algorithms (GA) for solving the Traveling Salesman Problem (TSP). The implementation includes multiple selection methods (tournament and roulette wheel), crossover operators (order and cycle crossover), mutation techniques (swap and inversion), and elitist replacement strategies. Experimental results demonstrate significant performance improvements over random solutions, with the genetic algorithm achieving 30-60% improvement in route optimization. The study analyzes convergence behavior, parameter sensitivity, and algorithm scalability using the standard Berlin52 benchmark dataset.
 
 **Keywords—** Genetic Algorithm, Traveling Salesman Problem, Optimization, Evolutionary Computing, Combinatorial Optimization

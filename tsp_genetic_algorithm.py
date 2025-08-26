@@ -313,8 +313,9 @@ class TSPGeneticAlgorithm:
         
         return best_route, best_distance
     
-    def plot_results(self, best_route: List[int], title: str = "TSP Solution"):
+    def plot_results(self, best_route: List[int], title: str = "TSP Solution", save_to_file: bool = True):
         """Plot the evolution progress and best route"""
+        import os
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
         
         # Plot evolution progress
@@ -350,6 +351,18 @@ class TSPGeneticAlgorithm:
         ax2.set_aspect('equal')
         
         plt.tight_layout()
+        
+        # Save to file for lab report
+        if save_to_file:
+            output_dir = "output"
+            os.makedirs(output_dir, exist_ok=True)
+            # Clean title for filename
+            safe_title = "".join(c for c in title if c.isalnum() or c in (' ', '-', '_')).rstrip()
+            safe_title = safe_title.replace(' ', '_')
+            filename = f"{output_dir}/{safe_title}_result.png"
+            plt.savefig(filename, dpi=300, bbox_inches='tight')
+            print(f"Figure saved: {filename}")
+        
         plt.show()
 
 

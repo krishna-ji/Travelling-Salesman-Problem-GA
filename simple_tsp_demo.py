@@ -132,8 +132,9 @@ class SimpleTSPGA:
         print(f"\nFinal best distance: {best_distance:.2f}")
         return best_ever, best_distance
     
-    def plot_solution(self, best_route):
+    def plot_solution(self, best_route, save_to_file=True):
         """Plot the best route found"""
+        import os
         plt.figure(figsize=(12, 5))
         
         # Plot fitness evolution
@@ -168,6 +169,15 @@ class SimpleTSPGA:
         plt.grid(True)
         
         plt.tight_layout()
+        
+        # Save to file for lab report
+        if save_to_file:
+            output_dir = "output"
+            os.makedirs(output_dir, exist_ok=True)
+            filename = f"{output_dir}/simple_tsp_demo_result.png"
+            plt.savefig(filename, dpi=300, bbox_inches='tight')
+            print(f"Figure saved: {filename}")
+        
         plt.show()
 
 

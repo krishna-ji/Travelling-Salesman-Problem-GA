@@ -100,6 +100,7 @@ def demo_convergence():
     best_route, best_distance = ga.run_algorithm(verbose=True)
     
     # Plot convergence
+    import os
     plt.figure(figsize=(10, 4))
     
     plt.subplot(1, 2, 1)
@@ -127,6 +128,14 @@ def demo_convergence():
     plt.grid(True, alpha=0.3)
     
     plt.tight_layout()
+    
+    # Save convergence analysis
+    output_dir = "output"
+    os.makedirs(output_dir, exist_ok=True)
+    filename = f"{output_dir}/convergence_analysis.png"
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    print(f"Figure saved: {filename}")
+    
     plt.show()
     
     print(f"\nFinal Results:")
